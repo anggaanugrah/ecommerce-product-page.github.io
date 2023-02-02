@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+html .container, body .container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(223deg, 64%, 98%);
+}
+html .container .nav-left, body .container .nav-left {
+  display: flex;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: auto;
+  margin-left: 30px;
+  align-self: stretch;
+  align-items: center;
+}
+html .container .nav-left li, body .container .nav-left li {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+html .container .nav-left li a, body .container .nav-left li a {
+  text-decoration: none;
+  color: hsl(219deg, 9%, 45%);
+  font-weight: 400;
+  margin: 0 15px;
+}
+html .container .nav-left li a:hover, body .container .nav-left li a:hover {
+  color: hsl(218deg, 12%, 13%);
+  font-weight: 500;
+}
+html .container .nav-left li:has(a:hover), body .container .nav-left li:has(a:hover) {
+  box-shadow: 0 -3px 0 hsl(26deg, 100%, 55%) inset;
+  transition: all 0.3s;
+}
+html .container .nav-right, body .container .nav-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+html .container .nav-right .nav-cart, body .container .nav-right .nav-cart {
+  display: flex;
+  margin: 0 20px;
+  justify-content: end;
+  text-align: center;
+  text-decoration: none;
+}
+html .container .nav-right .nav-cart img, body .container .nav-right .nav-cart img {
+  width: 20px;
+}
+html .container .nav-right .nav-cart img:hover, body .container .nav-right .nav-cart img:hover {
+  filter: brightness(0%);
+}
+html .container .nav-right .nav-cart span, body .container .nav-right .nav-cart span {
+  position: relative;
+  background-color: hsl(26deg, 100%, 55%);
+  font-size: 8px;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  top: -4px;
+  right: 12px;
+  width: 16px;
+  height: 10px;
+  border-radius: 6px;
+}
+html .container .nav-right .nav-avatar, body .container .nav-right .nav-avatar {
+  display: flex;
+}
+html .container .nav-right .nav-avatar img, body .container .nav-right .nav-avatar img {
+  width: 40px;
+  border-radius: 50%;
+}
+html .container .nav-right .nav-avatar img:hover, body .container .nav-right .nav-avatar img:hover {
+  box-shadow: 0 0 0 2px hsl(26deg, 100%, 55%);
+  transition: all 0.3s;
+}/*# sourceMappingURL=main.css.map */

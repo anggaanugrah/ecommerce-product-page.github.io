@@ -1,0 +1,118 @@
+// font style
+$font: 'Kumbh Sans', sans-serif;
+
+// font normal size
+$fontSize: 16px;
+
+// Color style
+$orange: hsl(26, 100%, 55%);
+$lgOrange: hsl(25, 100%, 94%);
+$darkBlue: hsl(218, 12%, 13%);
+$darkGray: hsl(219, 9%, 45%);
+$lightGray: hsl(220, 14%, 75%);
+$veryLightGray: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+$overlayBlack: hsl(0, 0%, 0%);
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    .container {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $veryLightGray;
+        
+        .nav-left {
+            display: flex;
+            font-family: $font;
+            font-size: 14px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-right: auto;
+            margin-left: 30px;
+            align-self: stretch;
+            align-items: center;
+
+            li {
+                display: flex;
+                height: 100%;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: $darkGray;
+                    font-weight: 400;
+                    margin: 0 15px;
+
+                    &:hover {
+                        color: $darkBlue;
+                        font-weight: 500;
+                    }
+                }
+
+                &:has(a:hover) {
+                    box-shadow: 0 -3px 0 $orange inset;
+                    transition: all 0.3s;
+                }
+            }
+
+            
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            list-style: none;
+
+            .nav-cart {
+                display: flex;
+                margin: 0 20px;
+                justify-content: end;
+                text-align: center;
+                text-decoration: none;
+
+                img {
+                    width: 20px;
+
+                    &:hover {
+                        filter: brightness(0%);
+                    }
+                }
+
+                span {
+                    position: relative;
+                    background-color: $orange;
+                    font-size: 8px;
+                    font-family: $font;
+                    font-weight: 700;
+                    color: $white;
+                    top: -4px;
+                    right: 12px;
+                    width: 16px;
+                    height: 10px;
+                    border-radius: 6px;
+                }
+            }
+
+            .nav-avatar {
+                display: flex;
+
+                img {
+                    width: 40px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        box-shadow: 0 0 0 2px $orange;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+
+    }
+}

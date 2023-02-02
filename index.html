@@ -5,17 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <!-- Css Link -->
+  <link rel="stylesheet" href="./style/main.css">
+
+  <!-- Font Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
+  <nav class="container">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <ul class="nav-left">
+      <li><a href="#" class="nav-link">Collections</a></li>
+      <li><a href="#" class="nav-link">Men</a></li>
+      <li><a href="#" class="nav-link">Women</a></li>
+      <li><a href="#" class="nav-link">About</a></li>
+      <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+    <ul class="nav-right">
+      <li><a href="#" class="nav-link nav-cart" id="cart"><img src="./images/icon-cart.svg" alt=""><span class="badge">3</span></a></li>
+      <li><a href="#" class="nav-link nav-avatar" id="avatar"><img src="./images/image-avatar.png" alt=""></a></li>
+    </ul>
+
+    <!-- <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div> -->
+  </nav>
   Collections
   Men
   Women
