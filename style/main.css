@@ -208,4 +208,164 @@ html .container .nav-cart-menu .cart-fill button:hover, body .container .nav-car
 }
 html .container .active, body .container .active {
   opacity: 1;
+}
+html .body-container, body .body-container {
+  margin: auto;
+  margin-bottom: 100px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+html .body-container .img-container, body .body-container .img-container {
+  margin: 50px 0;
+  margin-right: 110px;
+}
+html .body-container .img-container .product-image, body .body-container .img-container .product-image {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+html .body-container .img-container .thumbnails, body .body-container .img-container .thumbnails {
+  display: flex;
+  justify-content: space-between;
+}
+html .body-container .img-container .thumbnails .thumbnails-box, body .body-container .img-container .thumbnails .thumbnails-box {
+  height: 80px;
+  border-radius: 10px;
+}
+html .body-container .img-container .thumbnails .thumbnails-box img, body .body-container .img-container .thumbnails .thumbnails-box img {
+  border-radius: 10px;
+  cursor: pointer;
+}
+html .body-container .img-container .thumbnails .thumbnails-box img:hover, body .body-container .img-container .thumbnails .thumbnails-box img:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+html .body-container .img-container .thumbnails .active, body .body-container .img-container .thumbnails .active {
+  outline: 2px solid hsl(26deg, 100%, 55%);
+}
+html .body-container .img-container .thumbnails .active img, body .body-container .img-container .thumbnails .active img {
+  opacity: 0.5;
+}
+html .body-container .content-container, body .body-container .content-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kumbh Sans", sans-serif;
+}
+html .body-container .content-container .content-tag, body .body-container .content-container .content-tag {
+  color: hsl(26deg, 100%, 55%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+html .body-container .content-container .content-title, body .body-container .content-container .content-title {
+  margin: 10px 0;
+  font-size: 38px;
+}
+html .body-container .content-container .content-description, body .body-container .content-container .content-description {
+  color: hsl(219deg, 9%, 45%);
+  font-size: 14px;
+  line-height: 1.8;
+}
+html .body-container .content-container .content-price, body .body-container .content-container .content-price {
+  display: flex;
+  align-items: center;
+}
+html .body-container .content-container .content-price .discount-price, body .body-container .content-container .content-price .discount-price {
+  font-size: 24px;
+  margin: 5px 0;
+  font-weight: 700;
+  margin-right: 10px;
+}
+html .body-container .content-container .content-price .discount-amount, body .body-container .content-container .content-price .discount-amount {
+  height: 20px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(26deg, 100%, 55%);
+  background-color: hsl(25deg, 100%, 94%);
+  border-radius: 3px;
+}
+html .body-container .content-container .normal-price, body .body-container .content-container .normal-price {
+  color: hsl(220deg, 14%, 75%);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: line-through;
+  margin: 0;
+  margin-bottom: 30px;
+}
+html .body-container .content-container .quantity-selection, body .body-container .content-container .quantity-selection {
+  display: flex;
+}
+html .body-container .content-container .quantity-selection .qty-minus, body .body-container .content-container .quantity-selection .qty-minus {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border: none;
+  background-color: hsl(223deg, 64%, 98%);
+  color: hsl(26deg, 100%, 55%);
+  font-size: 30px;
+  font-weight: 600;
+  height: 50px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 10px 0 0 10px;
+  line-height: 42px;
+}
+html .body-container .content-container .quantity-selection .qty-minus:hover, body .body-container .content-container .quantity-selection .qty-minus:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+html .body-container .content-container .quantity-selection .qty, body .body-container .content-container .quantity-selection .qty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 50px;
+  font-weight: 600;
+  background-color: hsl(223deg, 64%, 98%);
+}
+html .body-container .content-container .quantity-selection .qty-plus, body .body-container .content-container .quantity-selection .qty-plus {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border: none;
+  background-color: hsl(223deg, 64%, 98%);
+  color: hsl(26deg, 100%, 55%);
+  font-size: 30px;
+  font-weight: 600;
+  height: 50px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+  line-height: 42px;
+}
+html .body-container .content-container .quantity-selection .qty-plus:hover, body .body-container .content-container .quantity-selection .qty-plus:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+html .body-container .content-container .quantity-selection button, body .body-container .content-container .quantity-selection button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  width: 100%;
+  background-color: hsl(26deg, 100%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 3px 10px 20px rgba(255, 125, 26, 0.3);
+}
+html .body-container .content-container .quantity-selection button img, body .body-container .content-container .quantity-selection button img {
+  filter: brightness(100);
+  margin-right: 10px;
+}
+html .body-container .content-container .quantity-selection button:hover, body .body-container .content-container .quantity-selection button:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */

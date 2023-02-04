@@ -19,6 +19,7 @@
         margin: 0;
         padding: 0;
 
+        // Navigation Style
         .container {
             margin: auto;
             width: 80%;
@@ -261,6 +262,196 @@
 
             .active {
                 opacity: 1;
+            }
+        }
+
+        // Body Style
+        .body-container {
+            margin: auto;
+            margin-bottom: 100px;
+            width: 70%;
+            display: flex;
+            align-items: center;
+
+            // Image gallery style
+            .img-container {
+                margin: 50px 0;
+                margin-right: 110px;
+
+                .product-image {
+                    border-radius: 10px;
+                    margin-bottom: 20px;
+                }
+
+                .thumbnails {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .thumbnails-box {
+                        height: 80px;
+                        border-radius: 10px;
+
+                        img {
+                            border-radius: 10px;
+                            cursor: pointer;
+    
+                            &:hover {
+                                opacity: 0.5;
+                                transition: all 0.3s;
+                            }
+                        }
+                    }
+
+                    .active {
+                        outline: 2px solid $orange;
+
+                        img {
+                            opacity: 0.5;
+                        }
+                    }                    
+                }
+            }
+
+            // Content style
+            .content-container {
+                display: flex;
+                flex-direction: column;
+                font-family: $font;
+
+                .content-tag {
+                    color: $orange;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin: 10px 0;
+                }
+
+                .content-title {
+                    margin: 10px 0;
+                    font-size: 38px;
+                }
+
+                .content-description {
+                    color: $darkGray;
+                    font-size: 14px;
+                    line-height: 1.8;
+                }
+
+                .content-price {
+                    display: flex;
+                    align-items: center;
+                    
+                    .discount-price {
+                        font-size: 24px;
+                        margin: 5px 0;
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+
+                    .discount-amount {
+                        height: 20px;
+                        width: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 700;
+                        font-size: 13px;
+                        color: $orange;
+                        background-color: $lgOrange;
+                        border-radius: 3px;
+
+                    }
+                }
+
+                .normal-price {
+                    color: $lightGray;
+                    font-weight: 600;
+                    font-size: 16px;
+                    text-decoration: line-through;
+                    margin: 0;
+                    margin-bottom: 30px;
+                }
+
+                .quantity-selection {
+                    display: flex;
+                    
+                    .qty-minus {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: center;
+                        border: none;
+                        background-color: $veryLightGray;
+                        color: $orange;
+                        font-size: 30px;
+                        font-weight: 600;
+                        height: 50px;
+                        width: 70px;
+                        cursor: pointer;
+                        border-radius: 10px 0 0 10px;
+                        line-height: 42px;
+
+                        &:hover {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
+                    }
+
+                    .qty {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 80px;
+                        height: 50px;
+                        font-weight: 600;
+                        background-color: $veryLightGray;
+                    }
+
+                    .qty-plus {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: center;
+                        border: none;
+                        background-color: $veryLightGray;
+                        color: $orange;
+                        font-size: 30px;
+                        font-weight: 600;
+                        height: 50px;
+                        width: 70px;
+                        cursor: pointer;
+                        border-radius: 0 10px 10px 0;
+                        line-height: 42px;
+
+                        &:hover {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
+                    }
+
+                    button {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 15px;
+                        width: 100%;
+                        background-color: $orange;
+                        color: $white;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        box-shadow: 3px 10px 20px rgb(255, 125, 26, 0.3);
+
+                        img {
+                            filter: brightness(100);
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            opacity: 0.5;
+                            transition: all 0.3s;
+                        }
+                    }
+                }
             }
         }
     }

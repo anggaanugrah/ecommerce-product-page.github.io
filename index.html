@@ -19,6 +19,7 @@
 </head>
 <body>
 
+  <!-- Navigation Container -->
   <nav class="container">
     <div class="logo">
       <img src="./images/logo.svg" alt="">
@@ -74,23 +75,52 @@
     </div> -->
   </nav>
 
-  Sneaker Company
+  <!-- Content Container -->
+  <div class="body-container">
+    <!-- Left Content (Image) -->
+    <div class="img-container">
+      <img class="product-image" src="./images/image-product-1.jpg" width="400px">
+      <div class="thumbnails">
+        <div class="thumbnails-box active">
+          <img src="./images/image-product-1-thumbnail.jpg" width="80px">
+        </div>
+        <div class="thumbnails-box">
+          <img src="./images/image-product-2-thumbnail.jpg" width="80px">
+        </div>
+        <div class="thumbnails-box">
+          <img src="./images/image-product-3-thumbnail.jpg" width="80px">
+        </div>
+        <div class="thumbnails-box">
+          <img src="./images/image-product-4-thumbnail.jpg" width="80px">
+        </div>        
+      </div>
+    </div>
 
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+    <!-- Right Content -->
+    <div class="content-container">
+      <h5 class="content-tag">Sneaker Company</h5>
+      <h1 class="content-title">Fall Limited Edition Sneakers</h1>
+      <p class="content-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+      <div class="content-price">
+        <p class="discount-price">$125.00</p>
+        <p class="discount-amount">50%</p>
+      </div>
+      <p class="normal-price">
+        $250.00
+      </p>
+      <div class="quantity-selection">
+          <div class="qty-minus">-</div>
+          <span value="0" class="qty">0</span> 
+          <div class="qty-plus">+</div>
+          <button type="submit" id="btn-add-cart"><img src="./images/icon-cart.svg" width="18px"> Add to cart</button>
+      </div>    
+    </div>
+  </div>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>
