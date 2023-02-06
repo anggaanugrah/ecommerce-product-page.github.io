@@ -149,9 +149,11 @@
                 }
 
                 .cart-empty {
-                    display: none;
+                    // display: none;
                     height: 100%;
-                    // display: flex;
+                    display: flex;
+                    width: 280px;
+                    height: 150px;
                     align-items: center;
                     justify-content: center;
 
@@ -165,7 +167,8 @@
                 }
 
                 .cart-fill {
-                    display: flex;
+                    display: none;
+                    // display: flex;
                     flex-direction: column;
                     height: 100%;
                     margin: 15px 20px;
