@@ -7,7 +7,6 @@ const totalCount = document.querySelector(".qty");
 
 // Variable to track count
 var count = totalCount.innerHTML;
-console.log(count)
 
 // Display initial count value
 totalCount.innerHTML = count;

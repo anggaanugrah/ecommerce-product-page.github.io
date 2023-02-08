@@ -80,18 +80,18 @@
     <!-- Left Content (Image) -->
     <div class="img-container">
       <img class="product-image" src="./images/image-product-1.jpg" width="400px">
-      <div class="thumbnails">
+      <div class="thumbnails" id="thumbnails">
         <div class="thumbnails-box active">
-          <img src="./images/image-product-1-thumbnail.jpg" width="80px">
+          <img src="./images/image-product-1-thumbnail.jpg" onclick="openModal();currentSlide(1)" width="80px">
         </div>
         <div class="thumbnails-box">
-          <img src="./images/image-product-2-thumbnail.jpg" width="80px">
+          <img src="./images/image-product-2-thumbnail.jpg" onclick="openModal();currentSlide(2)" width="80px">
         </div>
         <div class="thumbnails-box">
-          <img src="./images/image-product-3-thumbnail.jpg" width="80px">
+          <img src="./images/image-product-3-thumbnail.jpg" onclick="openModal();currentSlide(3)" width="80px">
         </div>
         <div class="thumbnails-box">
-          <img src="./images/image-product-4-thumbnail.jpg" width="80px">
+          <img src="./images/image-product-4-thumbnail.jpg" onclick="openModal();currentSlide(4)" width="80px">
         </div>        
       </div>
     </div>
@@ -131,7 +131,21 @@
         cartIcon.classList.toggle("active");
         navMenu.classList.toggle("active");
     })
+
+    // code for thumbnails active state
+    const thumbnails = document.getElementById("thumbnails");  
+    const thumbnailsBox = thumbnails.getElementsByClassName("thumbnails-box");  
+    for (var i = 0; i < thumbnailsBox.length; i++) {  
+      thumbnailsBox[i].addEventListener("click", function() {  
+      var current = document.getElementsByClassName("active");  
+      if (current.length > 0) {   
+        current[0].className = current[0].className.replace(" active", "");  
+      }  
+      this.className += " active";  
+      });  
+    } 
   </script>
   <script src="./style/autoIncrement.js"></script>
+  <script src="./style/galleryPopup.js"></script>
 </body>
 </html>
