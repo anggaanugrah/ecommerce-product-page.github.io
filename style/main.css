@@ -370,4 +370,64 @@ html .body-container .content-container .quantity-selection button img, body .bo
 html .body-container .content-container .quantity-selection button:hover, body .body-container .content-container .quantity-selection button:hover {
   opacity: 0.5;
   transition: all 0.3s;
+}
+html .body-container .modal, body .body-container .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+}
+html .body-container .modal .modal-content, body .body-container .modal .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+}
+html .body-container .modal .modal-content .close, body .body-container .modal .modal-content .close {
+  color: white;
+  position: relative;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: right;
+  cursor: pointer;
+}
+html .body-container .modal .modal-content .close:hover, body .body-container .modal .modal-content .close:hover {
+  color: hsl(26deg, 100%, 55%);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+html .body-container .modal .modal-content .mySlides, html .body-container .modal .modal-content img, body .body-container .modal .modal-content .mySlides, body .body-container .modal .modal-content img {
+  border-radius: 10px;
+}
+html .body-container .modal .modal-content .arrow-control, body .body-container .modal .modal-content .arrow-control {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+html .body-container .modal .modal-content .arrow-control .prev, html .body-container .modal .modal-content .arrow-control .next, body .body-container .modal .modal-content .arrow-control .prev, body .body-container .modal .modal-content .arrow-control .next {
+  cursor: pointer;
+  display: flex;
+  background: hsl(0deg, 0%, 100%);
+  text-align: center;
+  border-radius: 50%;
+  width: 20px;
+  padding: 10px;
+  color: hsl(218deg, 12%, 13%);
+  font-weight: bold;
+  font-size: 18px;
+  align-items: baseline;
+  justify-content: center;
+  transition: 0.6s ease;
+}
+html .body-container .modal .modal-content .arrow-control .prev:hover, html .body-container .modal .modal-content .arrow-control .next:hover, body .body-container .modal .modal-content .arrow-control .prev:hover, body .body-container .modal .modal-content .arrow-control .next:hover {
+  color: hsl(26deg, 100%, 55%);
 }/*# sourceMappingURL=main.css.map */

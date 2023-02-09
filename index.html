@@ -96,6 +96,50 @@
       </div>
     </div>
 
+    <!-- Modal Open / Lightbox -->
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <div class="mySlides">
+          <img src="./images/image-product-1.jpg" width="100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/image-product-2.jpg" width="100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/image-product-3.jpg" width="100%">
+        </div>
+        <div class="mySlides">
+          <img src="./images/image-product-4.jpg" width="100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <div class="arrow-control">
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="./images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="./images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="./images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)">
+        </div>
+
+        <div class="column">
+          <img class="demo" src="./images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)">
+        </div>
+
+      </div>
+    </div>
+
     <!-- Right Content -->
     <div class="content-container">
       <h5 class="content-tag">Sneaker Company</h5>
