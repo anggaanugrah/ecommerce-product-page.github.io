@@ -375,7 +375,7 @@ html .body-container .modal, body .body-container .modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 30px;
   left: 0;
   top: 0;
   width: 100%;
@@ -399,6 +399,7 @@ html .body-container .modal .modal-content .close, body .body-container .modal .
   font-weight: bold;
   text-align: right;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 html .body-container .modal .modal-content .close:hover, body .body-container .modal .modal-content .close:hover {
   color: hsl(26deg, 100%, 55%);
@@ -411,7 +412,10 @@ html .body-container .modal .modal-content .mySlides, html .body-container .moda
 html .body-container .modal .modal-content .arrow-control, body .body-container .modal .modal-content .arrow-control {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
+  width: 110%;
+  left: -20px;
+  top: 230px;
 }
 html .body-container .modal .modal-content .arrow-control .prev, html .body-container .modal .modal-content .arrow-control .next, body .body-container .modal .modal-content .arrow-control .prev, body .body-container .modal .modal-content .arrow-control .next {
   cursor: pointer;
@@ -430,4 +434,27 @@ html .body-container .modal .modal-content .arrow-control .prev, html .body-cont
 }
 html .body-container .modal .modal-content .arrow-control .prev:hover, html .body-container .modal .modal-content .arrow-control .next:hover, body .body-container .modal .modal-content .arrow-control .prev:hover, body .body-container .modal .modal-content .arrow-control .next:hover {
   color: hsl(26deg, 100%, 55%);
+}
+html .body-container .modal .modal-content .column-thumbnails, body .body-container .modal .modal-content .column-thumbnails {
+  display: flex;
+  justify-content: space-evenly;
+}
+html .body-container .modal .modal-content .column-thumbnails .column, body .body-container .modal .modal-content .column-thumbnails .column {
+  display: flex;
+  margin: 20px 0;
+  width: 65px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+}
+html .body-container .modal .modal-content .column-thumbnails .column img, body .body-container .modal .modal-content .column-thumbnails .column img {
+  width: 100%;
+  cursor: pointer;
+}
+html .body-container .modal .modal-content .column-thumbnails .column img:hover, body .body-container .modal .modal-content .column-thumbnails .column img:hover {
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+html .body-container .modal .modal-content .column-thumbnails .column .active, body .body-container .modal .modal-content .column-thumbnails .column .active {
+  outline: 2px solid hsl(26deg, 100%, 55%);
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

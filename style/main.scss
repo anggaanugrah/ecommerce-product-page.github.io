@@ -462,7 +462,7 @@
                 display: none;
                 position: fixed;
                 z-index: 1;
-                padding-top: 100px;
+                padding-top: 30px;
                 left: 0;
                 top: 0;
                 width: 100%;
@@ -486,6 +486,7 @@
                         font-weight: bold;
                         text-align: right;
                         cursor: pointer;
+                        margin-bottom: 10px;
 
                         &:hover {
                             color: $orange;
@@ -495,14 +496,16 @@
                     }
 
                     .mySlides, img {
-                        border-radius: 10px;
+                        border-radius: 10px;                        
                     }
 
                     .arrow-control {
                         display: flex;
                         justify-content: space-between;
-                        position: relative;
-                        // top: -80px;
+                        position: absolute;
+                        width: 110%;
+                        left: -20px;
+                        top: 230px;
 
                         .prev,.next {
                             cursor: pointer;
@@ -526,7 +529,35 @@
                             }
                     }
 
-                    
+                    .column-thumbnails {
+                        display: flex;
+                        justify-content: space-evenly;
+
+                        .column {
+                            display: flex;
+                            margin: 20px 0;
+                            width: 65px;
+                            background-color: $white;
+                            border-radius: 10px;
+
+                            img {
+                                width: 100%;
+                                cursor: pointer;
+                                
+                                &:hover {
+                                    opacity: 0.5;
+                                    transition: all 0.3s;
+                                }
+
+                                    
+                            }
+
+                            .active {
+                                outline: 2px solid $orange;
+                                opacity: 0.5;
+                            } 
+                        }
+                    }
                 }
             }
         }
